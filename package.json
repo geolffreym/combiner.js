@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "b_combiner-js",
+        "scope": null,
+        "escapedName": "b_combiner-js",
+        "name": "b_combiner-js",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/gmena/WebstormProjects/libs"
+    ]
+  ],
+  "_from": "b_combiner-js@latest",
+  "_id": "b_combiner-js@0.2.92",
+  "_inCache": true,
+  "_location": "/b_combiner-js",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "gmena",
+    "email": "gmjun2000@gmail.com"
+  },
+  "_npmVersion": "2.11.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "b_combiner-js",
+    "scope": null,
+    "escapedName": "b_combiner-js",
+    "name": "b_combiner-js",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/b_combiner-js/-/b_combiner-js-0.2.92.tgz",
+  "_shasum": "c401acb68aa81daea9b33a12d9b3a1e3ff69c6f9",
+  "_shrinkwrap": null,
+  "_spec": "b_combiner-js",
+  "_where": "/home/gmena/WebstormProjects/libs",
+  "author": {
+    "name": "Geolffrey Mena",
+    "email": "gmjun2000@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/geolffreym/Syrup-Node/issues"
+  },
+  "dependencies": {
+    "findit": "*",
+    "uglify-js": "*"
+  },
+  "description": "Simple JS Combiner",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "b7fcaca61943435020658dfbc8cbe2021e9c5333",
+    "tarball": "http://registry.npmjs.org/b_combiner-js/-/b_combiner-js-0.1.7.tgz"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "homepage": "https://github.com/geolffreym/Syrup-Node",
+  "keywords": [
+    "combiner",
+    "combinerjs",
+    "unifyjs",
+    "uglifyjs"
+  ],
+  "license": "GPL-3.0",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "gmena",
+      "email": "gmjun2000@gmail.com"
+    }
+  ],
+  "name": "b_combiner-js",
+  "optionalDependencies": {},
+  "readme": "Simple Combiner\n=========================\nSimple Combiner.\n\nConfig\n------\nConfiguration is very simple, you just have to create the folder /config/ and create the file init.js \n\nYou need to set the APP_PATH, is who is responsible for setting the relative directory of your application, the default is '/' and finally the environment, which can be either development or production.\n\n```js\n    var setting = {\n    \tapp_path      : '/',\n    \tenv: 'development'\n    };\n    \n    \n    //Please install Node and run the command `npm install` and `npm start` to execute\n    //Set Environment\n    if ( typeof exports !== 'undefined' )\n    \texports.setting = setting;\n```  \t\n\n  \nJoining files\n-------------\n\nBlend files is relatively simple, you must first establish the libraries you want to use in environment.\n\nThis is the /app/development/init\n\n```js\n    //Development\n     exports.files = {\n            js: {\n                output: 'app/include/init', //The output default base/include/init\n                src: [\n                    'app/config/init', // Needed do not change\n                    'system/base/init', // Needed do not change\n    //              'lib/Form',\n    //              'lib/Upload' // Add all the necessary scripts for startup\n                ]\n    \n            }\n        }\n        \n```\n\nPlease install Node and run the command `npm install` and `npm start` to execute\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geolffreym/Syrup-Node.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.2.92"
+}
